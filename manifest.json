@@ -1,0 +1,24 @@
+{
+  "manifest_version": 2,
+  "name": "AKS Proper Sort",
+  "version": "1.0",
+  "description": "A simple extension that properly sorts your AKS wishlist by price",
+  "permissions": ["activeTab"],
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "browser_action": {
+    "default_icon": {
+      "16": "logo_16x16.png",
+      "48": "logo_48x48.png",
+      "128": "logo_128x128.png"
+    }
+  },
+  "icons": {
+    "16": "logo_16x16.png",
+    "48": "logo_48x48.png",
+    "128": "logo_128x128.png"
+  },
+  "permissions": ["activeTab"]
+}
