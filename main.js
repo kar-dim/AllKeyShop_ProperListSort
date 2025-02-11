@@ -2,7 +2,7 @@
 const getGamePrice = (row) => {
     const aElement = row.children[row.children.length - 2].querySelector("a");
     return aElement ? parseFloat(aElement.textContent.trim().slice(0, -1)) : NaN;
-};
+}
 
 //get all the game rows, and sort them
 const sortLowestPrices = () => {
@@ -17,8 +17,8 @@ const sortLowestPrices = () => {
 
 	//sort all the found game rows
     gamesRows.sort((a, b) => {
-		const priceA = getPrice(a);
-        const priceB = getPrice(b);
+		const priceA = getGamePrice(a);
+        const priceB = getGamePrice(b);
 		if ((isNaN(priceA) && isNaN(priceB)) || isNaN(priceA))
 			return 1;
 		if (isNaN(priceB))
